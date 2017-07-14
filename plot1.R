@@ -1,8 +1,10 @@
 source("loading.R")
 
-names(dt1)
 
 #plots the histogram of the global active power 
+#dt1 is the data
+
+png("plot1.png", width=480, height=480)
 
 hist(as.numeric(dt1$Global_active_power),
      col  ="red", 
@@ -11,4 +13,5 @@ hist(as.numeric(dt1$Global_active_power),
      ylim = c(0,1300)
 )
 
+dev.off()
 
