@@ -1,7 +1,7 @@
 source("./loading.R")
 
 
-#plots the histogram of the global active power 
+#plots all the plots
 #dt1 is the data
 dt1[,datetime:= ymd_hms(paste(Date,Time,sep=" "))]
 
