@@ -12,5 +12,9 @@ dt <- data[, Date:=dmy(Date)]
 
 dt <- dt[Date>=ymd("2007-02-01")&Date<=ymd("2007-02-02"),][]
 
+setna<- function(x){sub("\\?","NA",x)}
+dt1 <- dt[,lapply(.SD,setna)]
+
+dt1[,table(lapply(.SD,function(x) x== "NA"))]
 
 
