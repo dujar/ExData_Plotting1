@@ -1,4 +1,4 @@
-source("loading.R")
+source("./loading.R")
 
 
 #plots the histogram of the global active power 
